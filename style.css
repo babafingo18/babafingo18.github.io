@@ -3,7 +3,7 @@
 @media (prefers-color-scheme:dark){:root{--bg:#121214;--ink:#f1eee8;--muted:#a19d96;--line:#2a2a2e;--card:#1b1b1f;--accent:#c9535f;--accent-2:#de6a76;--accent-ink:#fff;--chip:#232328}}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-a{color:inherit}img{max-width:100%;display:block}
+a{color:inherit}img{max-width:100%;height:auto;display:block}
 .wrap{max-width:1180px;margin:0 auto;padding:0 16px}
 .top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .top .wrap{display:flex;align-items:center;gap:16px;min-height:60px;flex-wrap:wrap}
@@ -25,11 +25,11 @@ h1.page{font:600 clamp(24px,4vw,36px)/1.15 Georgia,serif;margin:4px 0 10px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(176px,1fr));gap:16px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
 .card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
-.card img{width:100%;aspect-ratio:1;object-fit:cover;background:#fff}
+.card img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;background:#fff}
 .card span{padding:10px 12px 12px;font-size:14px;line-height:1.35}
 h2{font:600 22px/1.25 Georgia,serif;margin:34px 0 14px}
 .product{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:32px;margin-top:6px}
-.gallery{display:grid;gap:12px}.gallery img{width:100%;border-radius:14px;border:1px solid var(--line);background:#fff}
+.gallery{display:grid;gap:12px}.gallery img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:#fff}
 .price{font-size:22px;font-weight:600;margin:6px 0 4px}.ship{color:var(--muted);font-size:14px;margin:0 0 14px}
 .buy{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--accent-ink);padding:13px 22px;border-radius:12px;text-decoration:none;font-weight:600;font-size:16px}
 .buy:hover{background:var(--accent-2)}
