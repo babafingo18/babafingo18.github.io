@@ -42,4 +42,6 @@ h2{font:600 22px/1.25 Georgia,serif;margin:34px 0 14px}
 footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 0;color:var(--muted);font-size:13px}
 footer .wrap{display:grid;gap:10px}footer nav{display:flex;flex-wrap:wrap;gap:6px 16px}footer a{text-decoration:none}
 #results{display:none}#results.on{display:grid}
-@media (max-width:760px){.product{grid-template-columns:1fr;gap:18px}.hero{padding:28px 0 18px}}
+.mob{display:none}
+@media (max-width:760px){.product{grid-template-columns:1fr;gap:18px}.hero{padding:28px 0 18px}.mob{display:block}.side-head{display:none}
+.gallery{grid-template-columns:1fr 1fr;gap:8px}}
