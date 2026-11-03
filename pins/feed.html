@@ -1,0 +1,13 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Pin feed</title></head>
+<body style="font:16px system-ui;padding:24px">Loading pin queue…
+<script>
+(async () => {
+  const d = await fetch('queue.json?t=' + Date.now()).then(r => r.json());
+  const send = () => window.opener && window.opener.postMessage({tieQueue: d}, '*');
+  send();
+  window.addEventListener('message', e => {
+    if (e.data === 'tie-queue-ok') { document.body.textContent = 'Queue sent: ' + d.q.length + ' pins. This window closes itself.'; setTimeout(() => window.close(), 800); }
+  });
+  setInterval(send, 1500);
+})();
+</script></body></html>
