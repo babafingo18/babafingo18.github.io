@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Search | Patterned Neckties</title><meta name="description" content="Search printed neckties.">
+<link rel="canonical" href="https://babafingo18.github.io/search/"><link rel="stylesheet" href="https://babafingo18.github.io/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 28'%3E%3Cpath d='M6 0h6l-1.4 4 3.4 17-5 7-5-7 3.4-17z' fill='%237a1f2b'/%3E%3C/svg%3E">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Patterned Neckties">
+<meta property="og:title" content="Search | Patterned Neckties"><meta property="og:description" content="Search printed neckties."><meta property="og:url" content="https://babafingo18.github.io/search/">
+<meta name="twitter:card" content="summary_large_image"><meta name='robots' content='noindex'></head><body>
+<div class="top"><div class="wrap"><a class="brand" href="https://babafingo18.github.io/"><svg viewBox='0 0 18 28' aria-hidden='true'><path d='M6 0h6l-1.4 4 3.4 17-5 7-5-7 3.4-17z' fill='currentColor'/></svg>Patterned Neckties</a>
+<form class="search" action="https://babafingo18.github.io/search/" role="search"><input id="q" name="q" type="search" placeholder="Search ties: navy, Van Gogh, pride, dogs…" aria-label="Search ties"></form></div></div>
+<div class="wrap"><div id="results" class="grid" style="margin-top:20px"></div><main id="main"><h1 class='page'>Search</h1><p class='intro'>Type in the search box above.</p></main></div>
+<footer><div class="wrap"><nav><a href='https://babafingo18.github.io/c/animal-ties/'>Animal Ties</a><a href='https://babafingo18.github.io/c/art-ties-famous-paintings/'>Art Ties - Famous Paintings</a><a href='https://babafingo18.github.io/c/classic-pattern-ties/'>Classic Pattern Ties</a><a href='https://babafingo18.github.io/c/dog-cat-ties/'>Dog &amp; Cat Ties</a><a href='https://babafingo18.github.io/c/floral-nature-ties/'>Floral &amp; Nature Ties</a><a href='https://babafingo18.github.io/c/food-drink-ties/'>Food &amp; Drink Ties</a><a href='https://babafingo18.github.io/c/holiday-ties/'>Holiday Ties</a><a href='https://babafingo18.github.io/c/novelty-pattern-ties/'>Novelty &amp; Pattern Ties</a><a href='https://babafingo18.github.io/c/pin-dot-ties/'>Pin Dot Ties</a><a href='https://babafingo18.github.io/c/pride-ties/'>Pride Ties</a><a href='https://babafingo18.github.io/c/profession-ties/'>Profession Ties</a><a href='https://babafingo18.github.io/c/solid-color-ties/'>Solid Color Ties</a><a href='https://babafingo18.github.io/c/sports-hobby-ties/'>Sports &amp; Hobby Ties</a><a href='https://babafingo18.github.io/c/usa-ties/'>USA Ties</a></nav>
+<div>Patterned Neckties - independent necktie designs. All ties are sold and shipped through Amazon; buttons link to our own Amazon listings. Price shown is the Amazon list price and may change.</div></div></footer>
+<script>var BASE="https://babafingo18.github.io";
+(function(){var i=document.getElementById('q');if(!i)return;var idx=null,box=document.getElementById('results'),
+main=document.getElementById('main');function load(cb){if(idx)return cb();fetch(BASE+'/search.json').then(function(r){return r.json()})
+.then(function(d){idx=d;cb()})}function run(){var q=i.value.trim().toLowerCase();if(q.length<2){box.className='grid';box.style.display='none';
+if(main)main.style.display='';return}load(function(){var w=q.split(/\s+/),out=[];for(var k=0;k<idx.length&&out.length<60;k++){
+var t=idx[k].k;if(w.every(function(x){return t.indexOf(x)>=0}))out.push(idx[k])}box.innerHTML=out.length?out.map(function(p){
+return '<a class="card" href="'+p.u+'"><img loading="lazy" src="'+p.i+'" alt=""><span>'+p.t+'</span></a>'}).join(''):
+'<p class="muted">No ties found for "'+q.replace(/</g,'')+'".</p>';box.style.display='grid';if(main)main.style.display='none'})}
+i.addEventListener('input',run);var s=new URLSearchParams(location.search).get('q');if(s){i.value=s;run()}})();
+</script></body></html>

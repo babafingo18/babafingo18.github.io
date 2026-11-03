@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /search/
 Sitemap: https://babafingo18.github.io/sitemap.xml
